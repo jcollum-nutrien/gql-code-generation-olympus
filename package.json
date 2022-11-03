@@ -1,0 +1,30 @@
+{
+  "name": "gql-gen-olympus",
+  "description": "sample repo for generating and using generated gql code",
+  "license": "MIT",
+  "scripts": {
+    "codegen": "graphql-codegen --config config/faker-olympus-codegen.ts",
+    "demo": "ts-node src/demo-olympus-data.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@apollo/client": "3.7.1",
+    "graphql": "16.6.0",
+    "graphql-request": "5.0.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "~2.13.8",
+    "@graphql-codegen/client-preset": "~1.1.1",
+    "@graphql-codegen/introspection": "~2.2.1",
+    "@graphql-codegen/typescript": "~2.8.0",
+    "@graphql-codegen/typescript-resolvers": "~2.7.5",
+    "prettier": "2.7.1",
+    "typescript": "4.8.4"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 80,
+    "semi": true
+  }
+}
